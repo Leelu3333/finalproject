@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1.5;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Noto Sans TC", sans-serif !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+}
+.container .blog-homepage {
+  max-width: 100%;
+  display: flex;
+  position: relative;
+}
+.container .blog-detail-homepage {
+  display: flex;
+  align-items: center;
+  border: 1px solid #6c757d;
+}
+.container .blog-detail {
+  padding: 80px 312px;
+  max-width: 100%;
+  border: 1px solid #6c757d;
+}
+.container footer .topbox {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 312px;
+}
+.container footer .copyright {
+  text-align: center;
+  padding: 24px 0;
+}
+
+@media (max-width: 1024px) {
+  .container .blog-homepage {
+    flex-direction: column;
+  }
+  .container .blog-detail-homepage {
+    flex-direction: column;
+  }
+  .container .blog-detail {
+    padding: 0;
+    max-width: 100%;
+  }
+  .container footer .topbox {
+    display: none;
+  }
+}
+nav {
+  padding: 24px 80px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+nav a {
+  font-size: 28px;
+  margin-right: 20px;
+  color: #000000;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.card {
+  max-width: 30%;
+  margin: 40px 12px;
+}
+.card time {
+  display: block;
+}
+.card-text-lg {
+  font-size: 28px;
+  font-weight: 700;
+}
+.card-text-me {
+  font-size: 24px;
+  font-weight: 500;
+}
+.card-text-sm {
+  font-size: 16px;
+  color: #4b4b4b;
+}
+.card-text-line-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.card-text-black {
+  color: #000000;
+}
+.card-btn {
+  padding: 8px 16px;
+  border: 1px solid #6c757d;
+  border-radius: 40px;
+  display: inline-block;
+  color: #6c757d;
+}
+.card-btn-blue {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid #0027d5;
+  border-radius: 40px;
+  background-color: #0027d5;
+  color: #ffffff;
+}
+
+.blog-detail-homepage .card {
+  padding: 80px 312px 80px 12px;
+  max-width: none;
+  margin: 0;
+}
+
+.btn-group-section {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.btn-group-section .btn-group {
+  display: inline;
+  padding: 8px 20px;
+  background-color: #ffffff;
+  border-radius: 40px;
+}
+.btn-group-section .btn-group .btn {
+  border: none;
+  background: none;
+  width: 40px;
+  height: 40px;
+  color: #4b4b4b;
+}
+
+@media (max-width: 1440px) {
+  .blog-detail-homepage .card {
+    padding: 0;
+    margin: 20px;
+  }
+  .card {
+    max-width: 46%;
+  }
+}
+@media (max-width: 1024px) {
+  .card {
+    max-width: 100%;
+  }
+}
+@media (max-width: 414px) {
+  nav a {
+    font-size: 26px;
+  }
+}
+.blog-homepage img {
+  max-width: 50%;
+}
+.blog-homepage-text {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true");
+  width: 50%;
+  padding: 300px 80px;
+}
+
+.blog-detail-homepage img {
+  max-width: 50%;
+  padding-right: 12px;
+}
+
+.blog-detail .searchbox {
+  width: 30%;
+  padding: 16px 48px 16px 16px;
+  margin: 40px 12px;
+  border: 1px solid #4b4b4b;
+  border-radius: 40px;
+  color: #4b4b4b;
+}
+
+.topbox .icon {
+  display: flex;
+}
+.topbox .icon img {
+  max-width: 100%;
+}
+.topbox .email {
+  font-size: 32px;
+}
+
+.blog-homepage-text {
+  color: #0027d5;
+}
+.blog-homepage-text-lg {
+  font-size: 120px;
+  margin-bottom: 12px;
+}
+.blog-homepage-text-sm {
+  font-size: 28px;
+}
+
+.m-t {
+  margin-top: 8px;
+}
+
+.m-b {
+  margin-bottom: 8px;
+}
+
+.copyright {
+  font-size: 20px;
+}
+
+@media (max-width: 1440px) {
+  .blog-detail .searchbox {
+    width: 46%;
+  }
+}
+@media (max-width: 1024px) {
+  .blog-homepage img {
+    max-width: 100%;
+  }
+  .blog-homepage-text {
+    width: 100%;
+    padding: 24px 24px 36px 24px;
+    text-align: center;
+  }
+  .blog-detail-homepage img {
+    max-width: 100%;
+    padding-right: 0;
+  }
+  .blog-detail .searchbox {
+    width: 95%;
+    padding: 16px 48px 16px 16px;
+    margin: 100px 12px 40px 12px;
+  }
+}
+@media (max-width: 414px) {
+  .blog-homepage-text {
+    color: #0027d5;
+  }
+  .blog-homepage-text-lg {
+    font-size: 52px;
+  }
+  .blog-homepage-text-sm {
+    font-size: 26px;
+  }
+  .copyright {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=all.css.map */
