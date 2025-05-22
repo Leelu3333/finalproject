@@ -17,9 +17,10 @@
   width: 30%;
   padding: 16px 48px 16px 16px;
   margin: 40px 12px;
-  border: 1px solid #4b4b4b;
+  border: 1px solid $fc-darkgray;
   border-radius: 40px;
-  color: #4b4b4b;
+  color: $fc-darkgray;
+  font-size: $fs-1;
 }
 
 .topbox {
@@ -30,7 +31,8 @@
     }
   }
   .email {
-    font-size: 32px;
+    font-size: $fs-6;
+    font-weight: 500;
   }
 }
 
@@ -41,7 +43,7 @@
     margin-bottom: 12px;
   }
   &-sm {
-    font-size: 28px;
+    font-size: $fs-5;
   }
 }
 .m-t {
@@ -50,9 +52,11 @@
 .m-b {
   margin-bottom: 8px;
 }
-
+.f-c-black {
+  color: #000000;
+}
 .copyright {
-  font-size: 20px;
+  font-size: $fs-2;
 }
 @media (max-width: 1440px) {
   .blog-detail .searchbox {
@@ -84,13 +88,13 @@
   .blog-homepage-text {
     color: #0027d5;
     &-lg {
-      font-size: 52px;
+      font-size: $fs-7;
     }
     &-sm {
-      font-size: 26px;
+      font-size: $fs-4;
     }
   }
   .copyright {
-    font-size: 16px;
+    font-size: $fs-1;
   }
 }

@@ -175,6 +175,10 @@ img {
   max-width: 100%;
   border: 1px solid #6c757d;
 }
+.container .blog-detail-main {
+  padding: 80px 635px;
+  border: 1px solid #6c757d;
+}
 .container footer .topbox {
   display: flex;
   justify-content: space-between;
@@ -185,6 +189,11 @@ img {
   padding: 24px 0;
 }
 
+@media (max-width: 1600px) {
+  .container .blog-detail-main {
+    padding: 64px 450px;
+  }
+}
 @media (max-width: 1024px) {
   .container .blog-homepage {
     flex-direction: column;
@@ -195,6 +204,9 @@ img {
   .container .blog-detail {
     padding: 0;
     max-width: 100%;
+  }
+  .container .blog-detail-main {
+    padding: 64px 12px;
   }
   .container footer .topbox {
     display: none;
@@ -246,12 +258,9 @@ nav a {
   -webkit-line-clamp: 2;
   overflow: hidden;
 }
-.card-text-black {
-  color: #000000;
-}
 .card-btn {
   padding: 8px 16px;
-  border: 1px solid #6c757d;
+  border: 1px solid black;
   border-radius: 40px;
   display: inline-block;
   color: #6c757d;
@@ -269,6 +278,75 @@ nav a {
   padding: 80px 312px 80px 12px;
   max-width: none;
   margin: 0;
+}
+
+.blog-post {
+  margin-bottom: 48px;
+}
+.blog-post img {
+  margin-bottom: 24px;
+}
+.blog-post .textbox {
+  margin-bottom: 24px;
+}
+.blog-post .tipbox {
+  background-color: #ededed;
+  padding: 24px;
+  border-radius: 24px;
+  margin-bottom: 24px;
+}
+.blog-post .tipbox-text {
+  font-size: 16px;
+  font-weight: 700;
+}
+.blog-post .title {
+  font-size: 28px;
+  color: #0027d5;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.blog-post .title2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.blog-post .title3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.blog-post .text {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.blog-post .lists {
+  text-indent: -1.5em;
+  padding-left: 1.5em;
+}
+.blog-post .list {
+  font-size: 16px;
+  font-weight: 500;
+}
+.blog-post .list span {
+  color: #0027d5;
+}
+.blog-post .list-ol {
+  list-style: decimal inside none;
+}
+.blog-post .list-ul {
+  list-style: disc inside none;
+}
+
+.blog-posts-btn-grop {
+  display: flex;
+  justify-content: space-between;
+}
+.blog-posts-btn-grop .blog-posts-btn {
+  padding: 8px 16px;
+  border: 1px solid black;
+  border-radius: 40px;
+  display: inline-block;
+  color: #4b4b4b;
 }
 
 .btn-group-section {
@@ -329,6 +407,7 @@ nav a {
   border: 1px solid #4b4b4b;
   border-radius: 40px;
   color: #4b4b4b;
+  font-size: 16px;
 }
 
 .topbox .icon {
@@ -339,6 +418,7 @@ nav a {
 }
 .topbox .email {
   font-size: 32px;
+  font-weight: 500;
 }
 
 .blog-homepage-text {
@@ -358,6 +438,10 @@ nav a {
 
 .m-b {
   margin-bottom: 8px;
+}
+
+.f-c-black {
+  color: #000000;
 }
 
 .copyright {

@@ -9,12 +9,16 @@
   .blog-detail-homepage {
     display: flex;
     align-items: center;
-    border: 1px solid #6c757d;
+    border: 1px solid $lcb-slategray;
   }
   .blog-detail {
     padding: 80px 312px;
     max-width: 100%;
-    border: 1px solid #6c757d;
+    border: 1px solid $lcb-slategray;
+  }
+  .blog-detail-main {
+    padding: 80px 635px;
+    border: 1px solid $lcb-slategray;
   }
   footer {
     .topbox {
@@ -25,6 +29,13 @@
     .copyright {
       text-align: center;
       padding: 24px 0;
+    }
+  }
+}
+@media (max-width: 1600px) {
+  .container {
+    .blog-detail-main {
+      padding: 64px 450px;
     }
   }
 }
@@ -39,6 +50,9 @@
     .blog-detail {
       padding: 0;
       max-width: 100%;
+    }
+    .blog-detail-main {
+      padding: 64px 12px;
     }
     footer {
       .topbox {

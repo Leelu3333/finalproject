@@ -7,7 +7,7 @@ nav {
   background-color: #ffffff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   a {
-    font-size: 28px;
+    font-size: $fs-5;
     margin-right: 20px;
     color: #000000;
   }
@@ -25,16 +25,16 @@ nav {
   }
   &-text {
     &-lg {
-      font-size: 28px;
+      font-size: $fs-5;
       font-weight: 700;
     }
     &-me {
-      font-size: 24px;
+      font-size: $fs-3;
       font-weight: 500;
     }
     &-sm {
-      font-size: 16px;
-      color: #4b4b4b;
+      font-size: $fs-1;
+      color: $fc-darkgray;
     }
     &-line-clamp {
       display: -webkit-box;
@@ -42,23 +42,20 @@ nav {
       -webkit-line-clamp: 2;
       overflow: hidden;
     }
-    &-black {
-      color: #000000;
-    }
   }
   &-btn {
     padding: 8px 16px;
-    border: 1px solid #6c757d;
+    border: 1px solid black;
     border-radius: 40px;
     display: inline-block;
-    color: #6c757d;
+    color: $lcb-slategray;
   }
   &-btn-blue {
     display: inline-block;
     padding: 6px 12px;
-    border: 1px solid #0027d5;
+    border: 1px solid $fc-blue;
     border-radius: 40px;
-    background-color: #0027d5;
+    background-color: $fc-blue;
     color: #ffffff;
   }
 }
@@ -67,6 +64,74 @@ nav {
     padding: 80px 312px 80px 12px;
     max-width: none;
     margin: 0;
+  }
+}
+.blog-post {
+  margin-bottom: 48px;
+  img {
+    margin-bottom: 24px;
+  }
+  .textbox {
+    margin-bottom: 24px;
+  }
+  .tipbox {
+    background-color: #ededed;
+    padding: 24px;
+    border-radius: 24px;
+    margin-bottom: 24px;
+    &-text {
+      font-size: $fs-1;
+      font-weight: 700;
+    }
+  }
+  .title {
+    font-size: $fs-5;
+    color: $fc-blue;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  .title2 {
+    font-size: $fs-2;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .title3 {
+    font-size: $fs-1;
+    font-weight: 500;
+  }
+  .text {
+    font-size: $fs-1;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+
+  .lists {
+    text-indent: -1.5em;
+    padding-left: 1.5em;
+  }
+  .list {
+    font-size: $fs-1;
+    font-weight: 500;
+    span {
+      color: $fc-blue;
+    }
+    &-ol {
+      list-style: decimal inside none;
+    }
+    &-ul {
+      list-style: disc inside none;
+    }
+  }
+}
+.blog-posts-btn-grop {
+  display: flex;
+  justify-content: space-between;
+  .blog-posts-btn {
+    padding: 8px 16px;
+    border: 1px solid black;
+    border-radius: 40px;
+    display: inline-block;
+    color: $fc-darkgray;
   }
 }
 .btn-group-section {
@@ -82,7 +147,7 @@ nav {
       background: none;
       width: 40px;
       height: 40px;
-      color: #4b4b4b;
+      color: $fc-darkgray;
     }
   }
 }
@@ -104,6 +169,6 @@ nav {
 }
 @media (max-width: 414px) {
   nav a {
-    font-size: 26px;
+    font-size: $fs-4;
   }
 }
