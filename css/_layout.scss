@@ -6,6 +6,23 @@
     display: flex;
     position: relative;
   }
+  .about {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .blog-service {
+    padding: 80px 312px;
+  }
+  .blog-featured-posts {
+    padding: 80px 312px;
+  }
+  .blog-projects {
+    padding: 80px 312px;
+    .presentation-about {
+      display: flex;
+      align-items: center;
+    }
+  }
   .blog-detail-homepage {
     display: flex;
     align-items: center;

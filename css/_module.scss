@@ -12,6 +12,14 @@ nav {
     color: #000000;
   }
 }
+.text {
+  font-size: $fs-1;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.icon {
+  display: flex;
+}
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -59,11 +67,99 @@ nav {
     color: #ffffff;
   }
 }
-.blog-detail-homepage {
-  .card {
-    padding: 80px 312px 80px 12px;
-    max-width: none;
-    margin: 0;
+.title-index {
+  font-size: $fs-8;
+  font-weight: 700;
+  margin-bottom: 64px;
+}
+.service-cards {
+  padding: 0 110px;
+}
+.service-card {
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+  img {
+    max-width: 100%;
+  }
+  .textbox {
+    padding: 24px;
+    height: fit-content;
+    background-color: #ffffff;
+    &-right {
+      margin-left: -5%;
+    }
+    &-left {
+      margin-right: -5%;
+      z-index: 1;
+    }
+    .title {
+      font-size: $fs-5;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+  }
+}
+.presentation-about-cards {
+  margin-left: 25px;
+}
+.presentation-about-card {
+  padding: 80px 40px;
+  height: fit-content;
+  max-width: 100%;
+  .text {
+    font-weight: 700;
+    font-size: $fs-1;
+    span {
+      color: $fc-blue;
+    }
+  }
+  &-up {
+    background-color: #ffffff;
+    margin-left: -30%;
+  }
+  &-down {
+    background-color: #f5f5f5;
+    margin-top: -10%;
+    .text {
+      margin-bottom: 24px;
+    }
+    .card-btn {
+      border-color: $fc-blue;
+      color: $fc-blue;
+    }
+  }
+}
+.presentation-cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 24px 0;
+  padding: 24px 0;
+  background-color: #f5f5f5;
+}
+.presentation-card {
+  .check {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid $fc-darkgray;
+    margin-bottom: 16px;
+    label {
+      margin-bottom: 12px;
+    }
+  }
+  .title {
+    font-size: $fs-3;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .text {
+    font-size: $fs-1;
+    font-weight: 500;
+    color: $fc-darkgray;
+  }
+  .card-btn {
+    color: $fc-darkgray;
+    font-size: $fs-1;
   }
 }
 .blog-post {
@@ -89,22 +185,16 @@ nav {
     color: $fc-blue;
     font-weight: 700;
     margin-bottom: 24px;
+    &2 {
+      font-size: $fs-2;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    &3 {
+      font-size: $fs-1;
+      font-weight: 500;
+    }
   }
-  .title2 {
-    font-size: $fs-2;
-    font-weight: 700;
-    margin-bottom: 12px;
-  }
-  .title3 {
-    font-size: $fs-1;
-    font-weight: 500;
-  }
-  .text {
-    font-size: $fs-1;
-    font-weight: 500;
-    margin-bottom: 12px;
-  }
-
   .lists {
     text-indent: -1.5em;
     padding-left: 1.5em;
@@ -168,7 +258,10 @@ nav {
   }
 }
 @media (max-width: 414px) {
-  nav a {
-    font-size: $fs-4;
+  nav {
+    padding: 24px 60px;
+    a {
+      font-size: $fs-4;
+    }
   }
 }

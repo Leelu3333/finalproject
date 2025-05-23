@@ -6,13 +6,64 @@
     background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true');
     width: 50%;
     padding: 300px 80px;
+    color: #0027d5;
+    &-lg {
+      font-size: 120px;
+      margin-bottom: 12px;
+    }
+    &-sm {
+      font-size: $fs-5;
+    }
   }
 }
-.blog-detail-homepage img {
-  max-width: 50%;
-  padding-right: 12px;
+.about-card {
+  padding: 80px 40px;
+  background-color: #ffffff;
+  max-width: 60%;
+  margin-right: 5%;
+  margin-top: -8%;
+  position: relative;
+  z-index: 1;
+  .icon img {
+    max-width: 100%;
+    width: unset;
+  }
+  .text {
+    font-size: $fs-5;
+    margin-bottom: 16px;
+  }
 }
-
+.learn-more {
+  font-weight: 700;
+  font-size: $fs-5;
+  text-align: right;
+  margin-top: 42px;
+}
+.service-card .text {
+  margin: 0;
+  color: $fc-darkgray;
+}
+.presentation-about img {
+  max-width: 100%;
+  padding: 24px;
+  background-color: #ededed;
+}
+.presentation-cards img {
+  max-width: 100%;
+  width: unset;
+  margin-bottom: 16px;
+}
+.blog-detail-homepage {
+  .card {
+    padding: 80px 312px 80px 12px;
+    max-width: none;
+    margin: 0;
+  }
+  img {
+    max-width: 50%;
+    padding-right: 12px;
+  }
+}
 .blog-detail .searchbox {
   width: 30%;
   padding: 16px 48px 16px 16px;
@@ -22,28 +73,13 @@
   color: $fc-darkgray;
   font-size: $fs-1;
 }
-
-.topbox {
-  .icon {
-    display: flex;
-    img {
-      max-width: 100%;
-    }
+footer .topbox {
+  img {
+    max-width: 100%;
   }
   .email {
     font-size: $fs-6;
     font-weight: 500;
-  }
-}
-
-.blog-homepage-text {
-  color: #0027d5;
-  &-lg {
-    font-size: 120px;
-    margin-bottom: 12px;
-  }
-  &-sm {
-    font-size: $fs-5;
   }
 }
 .m-t {
