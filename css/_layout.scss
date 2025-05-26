@@ -18,6 +18,7 @@
   }
   .blog-projects {
     padding: 80px 312px;
+    border: 1px solid $lcb-slategray;
     .presentation-about {
       display: flex;
       align-items: center;
@@ -35,6 +36,15 @@
   }
   .blog-detail-main {
     padding: 80px 635px;
+    border: 1px solid $lcb-slategray;
+  }
+  .blog-subscription {
+    max-width: 100%;
+    display: flex;
+    position: relative;
+  }
+  .blog-contact {
+    padding: 80px 312px;
     border: 1px solid $lcb-slategray;
   }
   footer {

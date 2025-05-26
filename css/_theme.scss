@@ -16,6 +16,93 @@
     }
   }
 }
+.blog-subscription {
+  img {
+    max-width: 50%;
+  }
+  form {
+    display: block;
+    .subscription-information-name,
+    .subscription-information-email {
+      margin-bottom: 8px;
+      width: 100%;
+      background-color: #f1f1f1;
+      border: none;
+      padding: 8px 16px;
+      font-size: $fs-2;
+      color: #4b4b4b;
+    }
+    .subscription-information-email {
+      margin-bottom: 24px;
+    }
+    .subscription-information-submit {
+      color: $fc-blue;
+      font-size: $fs-1;
+      padding: 8px 16px;
+      border: 1px solid $fc-blue;
+      background-color: #ffffff;
+    }
+  }
+  .subscription {
+    padding: 80px;
+    background-color: #ffffff;
+  }
+  &-text {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true');
+    width: 50%;
+    padding: 172px 80px;
+    &-lg {
+      font-size: $fs-8;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+    &-sm {
+      font-weight: 500;
+      font-size: $fs-2;
+      margin-bottom: 24px;
+      span {
+        color: $fc-blue;
+      }
+    }
+  }
+}
+.blog-contact {
+  width: 100%;
+  &-text {
+    &-lg {
+      font-weight: 700;
+      font-size: $fs-8;
+      margin-bottom: 24px;
+    }
+    &-sm {
+      font-weight: 500;
+      font-size: $fs-6;
+    }
+  }
+  .border-bottom {
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    .textbox {
+      display: flex;
+    }
+    i {
+      position: relative;
+      &::before {
+        font-family: 'Font Awesome 5 Free';
+        font-size: 28px;
+      }
+    }
+  }
+  img {
+    max-width: 100%;
+    width: unset;
+    margin-right: 9px;
+  }
+}
 .about-card {
   padding: 80px 40px;
   background-color: #ffffff;
@@ -38,6 +125,16 @@
   font-size: $fs-5;
   text-align: right;
   margin-top: 42px;
+  i {
+    margin-left: 8px;
+    padding: 8px 12px;
+    border: 2px solid black;
+    border-radius: 40px;
+  }
+  i::before {
+    font-family: 'Font Awesome 5 Free';
+    font-size: 28px;
+  }
 }
 .service-card .text {
   margin: 0;
@@ -64,15 +161,66 @@
     padding-right: 12px;
   }
 }
-.blog-detail .searchbox {
-  width: 30%;
-  padding: 16px 48px 16px 16px;
-  margin: 40px 12px;
-  border: 1px solid $fc-darkgray;
-  border-radius: 40px;
-  color: $fc-darkgray;
-  font-size: $fs-1;
+.blog-detail {
+  .searchbox {
+    padding: 16px 48px 16px 30px;
+    margin: 40px 12px;
+    border: 1px solid $fc-darkgray;
+    border-radius: 40px;
+    color: $fc-darkgray;
+    font-size: $fs-1;
+  }
+  .magnifier {
+    position: relative;
+    display: inline-block;
+  }
+  .magnifier input {
+    text-indent: 20px;
+  }
+  .magnifier:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f002';
+    font-size: 28px;
+    position: absolute;
+    left: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
+.textbox .icon {
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.textbox .icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #0056d2;
+  border-radius: 2px;
+}
+.presentation-about-card .icon {
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.presentation-about-card .icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #0056d2;
+  border-radius: 2px;
+}
+
 footer .topbox {
   img {
     max-width: 100%;
@@ -94,11 +242,7 @@ footer .topbox {
 .copyright {
   font-size: $fs-2;
 }
-@media (max-width: 1440px) {
-  .blog-detail .searchbox {
-    width: 46%;
-  }
-}
+
 @media (max-width: 1024px) {
   .blog-homepage {
     img {
@@ -116,8 +260,10 @@ footer .topbox {
   }
   .blog-detail .searchbox {
     width: 95%;
-    padding: 16px 48px 16px 16px;
     margin: 100px 12px 40px 12px;
+  }
+  .magnifier:before {
+    top: 65%;
   }
 }
 @media (max-width: 414px) {

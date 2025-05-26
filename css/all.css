@@ -177,6 +177,7 @@ img {
 }
 .container .blog-projects {
   padding: 80px 312px;
+  border: 1px solid #6c757d;
 }
 .container .blog-projects .presentation-about {
   display: flex;
@@ -194,6 +195,15 @@ img {
 }
 .container .blog-detail-main {
   padding: 80px 635px;
+  border: 1px solid #6c757d;
+}
+.container .blog-subscription {
+  max-width: 100%;
+  display: flex;
+  position: relative;
+}
+.container .blog-contact {
+  padding: 80px 312px;
   border: 1px solid #6c757d;
 }
 .container footer .topbox {
@@ -524,6 +534,91 @@ nav a {
   font-size: 28px;
 }
 
+.blog-subscription img {
+  max-width: 50%;
+}
+.blog-subscription form {
+  display: block;
+}
+.blog-subscription form .subscription-information-name,
+.blog-subscription form .subscription-information-email {
+  margin-bottom: 8px;
+  width: 100%;
+  background-color: #f1f1f1;
+  border: none;
+  padding: 8px 16px;
+  font-size: 20px;
+  color: #4b4b4b;
+}
+.blog-subscription form .subscription-information-email {
+  margin-bottom: 24px;
+}
+.blog-subscription form .subscription-information-submit {
+  color: #0027d5;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: 1px solid #0027d5;
+  background-color: #ffffff;
+}
+.blog-subscription .subscription {
+  padding: 80px;
+  background-color: #ffffff;
+}
+.blog-subscription-text {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true");
+  width: 50%;
+  padding: 172px 80px;
+}
+.blog-subscription-text-lg {
+  font-size: 64px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+.blog-subscription-text-sm {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+.blog-subscription-text-sm span {
+  color: #0027d5;
+}
+
+.blog-contact {
+  width: 100%;
+}
+.blog-contact-text-lg {
+  font-weight: 700;
+  font-size: 64px;
+  margin-bottom: 24px;
+}
+.blog-contact-text-sm {
+  font-weight: 500;
+  font-size: 32px;
+}
+.blog-contact .border-bottom {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+}
+.blog-contact .border-bottom .textbox {
+  display: flex;
+}
+.blog-contact .border-bottom i {
+  position: relative;
+}
+.blog-contact .border-bottom i::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 28px;
+}
+.blog-contact img {
+  max-width: 100%;
+  width: unset;
+  margin-right: 9px;
+}
+
 .about-card {
   padding: 80px 40px;
   background-color: #ffffff;
@@ -547,6 +642,16 @@ nav a {
   font-size: 28px;
   text-align: right;
   margin-top: 42px;
+}
+.learn-more i {
+  margin-left: 8px;
+  padding: 8px 12px;
+  border: 2px solid black;
+  border-radius: 40px;
+}
+.learn-more i::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 28px;
 }
 
 .service-card .text {
@@ -577,13 +682,65 @@ nav a {
 }
 
 .blog-detail .searchbox {
-  width: 30%;
-  padding: 16px 48px 16px 16px;
+  padding: 16px 48px 16px 30px;
   margin: 40px 12px;
   border: 1px solid #4b4b4b;
   border-radius: 40px;
   color: #4b4b4b;
   font-size: 16px;
+}
+.blog-detail .magnifier {
+  position: relative;
+  display: inline-block;
+}
+.blog-detail .magnifier input {
+  text-indent: 20px;
+}
+.blog-detail .magnifier:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f002";
+  font-size: 28px;
+  position: absolute;
+  left: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.textbox .icon {
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.textbox .icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #0056d2;
+  border-radius: 2px;
+}
+
+.presentation-about-card .icon {
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.presentation-about-card .icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #0056d2;
+  border-radius: 2px;
 }
 
 footer .topbox img {
@@ -610,11 +767,6 @@ footer .topbox .email {
   font-size: 20px;
 }
 
-@media (max-width: 1440px) {
-  .blog-detail .searchbox {
-    width: 46%;
-  }
-}
 @media (max-width: 1024px) {
   .blog-homepage img {
     max-width: 100%;
@@ -630,8 +782,10 @@ footer .topbox .email {
   }
   .blog-detail .searchbox {
     width: 95%;
-    padding: 16px 48px 16px 16px;
     margin: 100px 12px 40px 12px;
+  }
+  .magnifier:before {
+    top: 65%;
   }
 }
 @media (max-width: 414px) {
