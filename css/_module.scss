@@ -76,13 +76,15 @@ nav {
   padding: 0 110px;
 }
 .service-card {
+  width: 100%;
   margin-top: 64px;
   display: flex;
   align-items: center;
   img {
-    max-width: 100%;
+    max-width: 60%;
   }
   .textbox {
+    max-width: 40%;
     padding: 24px;
     height: fit-content;
     background-color: #ffffff;
@@ -241,6 +243,23 @@ nav {
     }
   }
 }
+.carousel-wrapper {
+  position: relative;
+}
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  cursor: pointer;
+}
+.custom-next {
+  right: 0;
+}
+
 @media (max-width: 1440px) {
   .blog-detail-homepage {
     .card {
@@ -252,7 +271,7 @@ nav {
     max-width: 45%;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1270px) {
   .card {
     max-width: 100%;
   }

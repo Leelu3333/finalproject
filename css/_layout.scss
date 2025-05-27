@@ -14,7 +14,7 @@
     padding: 80px 312px;
   }
   .blog-featured-posts {
-    padding: 80px 312px;
+    padding: 80px 244px;
   }
   .blog-projects {
     padding: 80px 312px;
@@ -26,8 +26,7 @@
   }
   .blog-detail-homepage {
     display: flex;
-    align-items: center;
-    border: 1px solid $lcb-slategray;
+    border: 1px solid #6c757d;
   }
   .blog-detail {
     padding: 80px 312px;
@@ -62,7 +61,23 @@
 @media (max-width: 1600px) {
   .container {
     .blog-detail-main {
-      padding: 64px 450px;
+      padding: 64px 400px;
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .container .blog-detail-main {
+    padding: 64px 12px;
+  }
+  .container .blog-detail {
+    padding: 80px 200px;
+  }
+  .container footer {
+    .topbox {
+      justify-content: center;
+      .icon {
+        display: none;
+      }
     }
   }
 }
@@ -84,6 +99,9 @@
     footer {
       .topbox {
         display: none;
+        .icon {
+          display: none;
+        }
       }
     }
   }
