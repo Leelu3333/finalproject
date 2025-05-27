@@ -63,6 +63,15 @@
     .blog-detail-main {
       padding: 64px 400px;
     }
+    .blog-service {
+      padding: 80px 100px;
+    }
+    .blog-featured-posts {
+      padding: 80px 100px;
+    }
+    .blog-projects {
+      padding: 80px 100px;
+    }
   }
 }
 @media (max-width: 1440px) {
@@ -71,6 +80,12 @@
   }
   .container .blog-detail {
     padding: 80px 200px;
+  }
+  .container .blog-projects .presentation-about {
+    flex-direction: column;
+  }
+  .container .blog-contact {
+    padding: 80px 180px;
   }
   .container footer {
     .topbox {
@@ -95,6 +110,21 @@
     }
     .blog-detail-main {
       padding: 64px 12px;
+    }
+    .blog-service {
+      padding: 64px 12px;
+    }
+    .blog-featured-posts {
+      padding: 64px 12px;
+    }
+    .blog-projects {
+      padding: 64px 12px;
+    }
+    .blog-contact {
+      padding: 64px 12px;
+    }
+    .blog-subscription {
+      flex-direction: column;
     }
     footer {
       .topbox {

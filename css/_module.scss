@@ -75,7 +75,8 @@ nav {
 .service-cards {
   padding: 0 110px;
 }
-.service-card {
+.service-card-right,
+.service-card-left {
   width: 100%;
   margin-top: 64px;
   display: flex;
@@ -270,10 +271,82 @@ nav {
   .card {
     max-width: 45%;
   }
+  .presentation-about-cards {
+    margin-left: 0;
+  }
+  .presentation-card {
+    width: 50%;
+    padding: 50px;
+  }
+  .presentation-cards {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .presentation-about-card {
+    padding: 40px 24px;
+  }
+  .presentation-about-card-up {
+    margin-left: 0;
+  }
+  .presentation-about-card-down {
+    margin-top: 0;
+  }
 }
 @media (max-width: 1270px) {
   .card {
     max-width: 100%;
+  }
+  .service-card-left {
+    flex-direction: column-reverse;
+    .textbox-left {
+      margin-right: 0;
+    }
+  }
+  .service-card-right {
+    flex-direction: column;
+    .textbox-right {
+      margin-left: 0;
+    }
+  }
+  .service-card-left,
+  .service-card-right {
+    img {
+      max-width: 80%;
+    }
+    .textbox {
+      max-width: 80%;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .service-cards {
+    padding: 0;
+  }
+  .service-card-left,
+  .service-card-right {
+    img {
+      max-width: 100%;
+    }
+    .textbox {
+      max-width: unset;
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .presentation-card {
+    width: 100%;
+    padding: 50px;
+  }
+  .presentation-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .presentation-about-card {
+    padding: 40px 24px;
+  }
+  .title-index {
+    font-size: $fs-9;
   }
 }
 @media (max-width: 414px) {

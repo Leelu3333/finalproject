@@ -26,7 +26,7 @@
           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section.png?raw=true"
           alt="Hero Section.png"
         />
-        <div class="blog-homepage-text">
+        <div class="blog-homepage-text p-24-200">
           <h1 class="blog-homepage-text-lg">Alyse Wang</h1>
           <p class="blog-homepage-text-sm">前端工程師 & 職涯諮詢師</p>
         </div>
@@ -60,7 +60,7 @@
       <div class="blog-service">
         <h2 class="title-index">專業服務與方案</h2>
         <ul class="service-cards">
-          <li class="service-card">
+          <li class="service-card-right">
             <img
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/photo.png?raw=true"
               alt="圖一"
@@ -73,7 +73,7 @@
               </p>
             </div>
           </li>
-          <li class="service-card">
+          <li class="service-card-left">
             <div class="textbox textbox-left">
               <div class="icon"></div>
               <h3 class="title">線上諮詢</h3>
@@ -86,7 +86,7 @@
               alt="圖二"
             />
           </li>
-          <li class="service-card">
+          <li class="service-card-right">
             <img
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/photo3.png?raw=true"
               alt="圖三"
@@ -99,7 +99,7 @@
               </p>
             </div>
           </li>
-          <li class="service-card">
+          <li class="service-card-left">
             <div class="textbox textbox-left">
               <div class="icon"></div>
               <h3 class="title">企業內訓</h3>
@@ -393,12 +393,14 @@
               </div>
             </div>
           </div>
-          <button class="slick-prev custom-prev">
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-          <button class="slick-next custom-next">
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
+          <div class="autoplay-btn">
+            <button class="slick-prev custom-prev">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="slick-next custom-next">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
         </div>
       </div>
       <div class="blog-projects">
@@ -605,6 +607,26 @@
         autoplaySpeed: 2000,
         prevArrow: $('.custom-prev'),
         nextArrow: $('.custom-next'),
+        responsive: [
+          {
+            breakpoint: 1270,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 2000,
+            },
+          },
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 2000,
+            },
+          },
+        ],
       })
     </script>
   </body>
