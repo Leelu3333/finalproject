@@ -219,12 +219,8 @@ img {
   .container .blog-detail-main {
     padding: 64px 400px;
   }
-  .container .blog-service {
-    padding: 80px 100px;
-  }
-  .container .blog-featured-posts {
-    padding: 80px 100px;
-  }
+  .container .blog-service,
+  .container .blog-featured-posts,
   .container .blog-projects {
     padding: 80px 100px;
   }
@@ -250,33 +246,21 @@ img {
   }
 }
 @media (max-width: 1024px) {
-  .container .blog-homepage {
-    flex-direction: column;
-  }
-  .container .blog-detail-homepage {
+  .container .blog-homepage,
+  .container .blog-detail-homepage,
+  .container .blog-subscription {
     flex-direction: column;
   }
   .container .blog-detail {
     padding: 0;
     max-width: 100%;
   }
-  .container .blog-detail-main {
-    padding: 64px 12px;
-  }
-  .container .blog-service {
-    padding: 64px 12px;
-  }
-  .container .blog-featured-posts {
-    padding: 64px 12px;
-  }
-  .container .blog-projects {
-    padding: 64px 12px;
-  }
+  .container .blog-detail-main,
+  .container .blog-service,
+  .container .blog-featured-posts,
+  .container .blog-projects,
   .container .blog-contact {
     padding: 64px 12px;
-  }
-  .container .blog-subscription {
-    flex-direction: column;
   }
   .container footer .topbox {
     display: none;
@@ -602,6 +586,7 @@ i::before {
   }
   .presentation-about-card {
     padding: 40px 24px;
+    margin-bottom: 12px;
   }
   .presentation-about-card-up {
     margin-left: 0;
@@ -661,16 +646,22 @@ i::before {
   .presentation-about-card {
     padding: 40px 24px;
   }
+  .presentation-about-card-down .card-btn {
+    font-size: 16px;
+  }
   .title-index {
     font-size: 48px;
   }
 }
 @media (max-width: 414px) {
+  .presentation-card {
+    padding: 24px;
+  }
   nav {
     padding: 24px 60px;
   }
   nav a {
-    font-size: 26px;
+    font-size: 28px;
   }
 }
 .blog-homepage img {
@@ -685,9 +676,11 @@ i::before {
 .blog-homepage-text-lg {
   font-size: 64px;
   margin-bottom: 12px;
+  font-weight: 900;
 }
 .blog-homepage-text-sm {
   font-size: 28px;
+  font-weight: 700;
 }
 
 .blog-subscription img {
@@ -881,9 +874,10 @@ i::before {
 
 .textbox .icon {
   position: relative;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 18.75px 0;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 .textbox .icon::before {
@@ -897,16 +891,16 @@ i::before {
 
 .presentation-about-card .icon {
   position: relative;
-  font-size: 24px;
-  font-weight: bold;
   margin-bottom: 16px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 .presentation-about-card .icon::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
   width: 25px;
   height: 2px;
   background-color: #0056d2;
@@ -950,9 +944,6 @@ footer .copyright {
     padding: 24px 24px 36px 24px;
     text-align: center;
   }
-  .p-24-200 {
-    padding: 24px 24px 200px 24px;
-  }
   .blog-detail-homepage .card {
     padding: 80px 12px;
     max-width: 100%;
@@ -995,15 +986,16 @@ footer .copyright {
     background-color: rgba(255, 255, 255, 0.8);
     border: none;
   }
-  .presentation-about img {
-    max-width: 100%;
-  }
+  .presentation-about img,
   .blog-subscription img {
     max-width: 100%;
   }
   .blog-subscription-text {
     width: 100%;
     padding: 12px 12px;
+  }
+  .p-24-200 {
+    padding: 24px 24px 200px 24px;
   }
 }
 @media (max-width: 768px) {
@@ -1028,6 +1020,15 @@ footer .copyright {
   }
   .blog-homepage-text-sm {
     font-size: 26px;
+  }
+  .about-card .text {
+    font-size: 24px;
+  }
+  .blog-featured-posts .title-index {
+    margin: 0;
+  }
+  .blog-subscription .subscription {
+    padding: 40px 24px;
   }
   .copyright {
     font-size: 16px;

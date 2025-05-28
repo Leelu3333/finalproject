@@ -77,12 +77,8 @@
     .blog-detail-main {
       padding: 64px 400px;
     }
-    .blog-service {
-      padding: 80px 100px;
-    }
-    .blog-featured-posts {
-      padding: 80px 100px;
-    }
+    .blog-service,
+    .blog-featured-posts,
     .blog-projects {
       padding: 80px 100px;
     }
@@ -114,33 +110,21 @@
 }
 @media (max-width: 1024px) {
   .container {
-    .blog-homepage {
-      flex-direction: column;
-    }
-    .blog-detail-homepage {
+    .blog-homepage,
+    .blog-detail-homepage,
+    .blog-subscription {
       flex-direction: column;
     }
     .blog-detail {
       padding: 0;
       max-width: 100%;
     }
-    .blog-detail-main {
-      padding: 64px 12px;
-    }
-    .blog-service {
-      padding: 64px 12px;
-    }
-    .blog-featured-posts {
-      padding: 64px 12px;
-    }
-    .blog-projects {
-      padding: 64px 12px;
-    }
+    .blog-detail-main,
+    .blog-service,
+    .blog-featured-posts,
+    .blog-projects,
     .blog-contact {
       padding: 64px 12px;
-    }
-    .blog-subscription {
-      flex-direction: column;
     }
     footer {
       .topbox {
