@@ -930,6 +930,10 @@ footer .copyright {
   color: #000000;
 }
 
+.mobile-break {
+  display: none;
+}
+
 @media (max-width: 1600px) {
   .presentation-about img {
     max-width: 60%;
@@ -1029,6 +1033,9 @@ footer .copyright {
   }
   .blog-subscription .subscription {
     padding: 40px 24px;
+  }
+  .mobile-break {
+    display: inline;
   }
   .copyright {
     font-size: 16px;
