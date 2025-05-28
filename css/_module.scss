@@ -20,6 +20,7 @@ nav {
 .icon {
   display: flex;
 }
+// 部落格-文章
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -72,6 +73,7 @@ nav {
   font-weight: 700;
   margin-bottom: 64px;
 }
+// 首頁-專業服務與方案
 .service-cards {
   padding: 0 110px;
 }
@@ -103,6 +105,7 @@ nav {
     }
   }
 }
+//首頁-職涯諮詢成功案例-介紹
 .presentation-about-cards {
   margin-left: 25px;
 }
@@ -165,6 +168,7 @@ nav {
     font-size: $fs-1;
   }
 }
+// 部落格詳情-文章
 .blog-post {
   margin-bottom: 48px;
   img {
@@ -221,12 +225,13 @@ nav {
   justify-content: space-between;
   .blog-posts-btn {
     padding: 8px 16px;
-    border: 1px solid black;
+    border: 1px solid #000000;
     border-radius: 40px;
     display: inline-block;
     color: $fc-darkgray;
   }
 }
+// 部落格-按鈕
 .btn-group-section {
   text-align: center;
   margin-bottom: 80px;
@@ -244,6 +249,7 @@ nav {
     }
   }
 }
+// 首頁-輪播
 .carousel-wrapper {
   position: relative;
 }
@@ -260,7 +266,18 @@ nav {
 .custom-next {
   right: 0;
 }
-
+// icon
+i {
+  margin-left: 8px;
+  padding: 8px 12px;
+  background-color: $fc-blue;
+  border-radius: 40px;
+}
+i::before {
+  font-family: 'Font Awesome 5 Free';
+  font-size: 28px;
+  color: #f1f1f1;
+}
 @media (max-width: 1440px) {
   .blog-detail-homepage {
     .card {

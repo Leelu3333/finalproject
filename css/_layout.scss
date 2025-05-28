@@ -2,57 +2,71 @@
   margin: 0 auto;
   max-width: 100%;
   .blog-homepage {
+    // 首頁+blog頁面(照片+介紹)
     max-width: 100%;
     display: flex;
     position: relative;
   }
   .about {
+    // 首頁-關於Alyse的區塊
     display: flex;
     justify-content: flex-end;
   }
   .blog-service {
+    // 首頁-專業服務與方案
     padding: 80px 312px;
   }
   .blog-featured-posts {
+    // 首頁-部落格精選
     padding: 80px 244px;
   }
   .blog-projects {
+    // 首頁-職涯諮詢成功案例
     padding: 80px 312px;
     border: 1px solid $lcb-slategray;
     .presentation-about {
+      // 首頁-職涯諮詢成功案例-介紹
       display: flex;
       align-items: center;
     }
   }
-  .blog-detail-homepage {
-    display: flex;
-    border: 1px solid #6c757d;
-  }
-  .blog-detail {
-    padding: 80px 312px;
-    max-width: 100%;
-    border: 1px solid $lcb-slategray;
-  }
-  .blog-detail-main {
-    padding: 80px 635px;
-    border: 1px solid $lcb-slategray;
-  }
   .blog-subscription {
+    // 首頁-訂閱電子報
     max-width: 100%;
     display: flex;
     position: relative;
   }
   .blog-contact {
+    // 首頁-與我聯繫
     padding: 80px 312px;
     border: 1px solid $lcb-slategray;
   }
+  .blog-detail-homepage {
+    // 部落格+部落格詳情頁面(照片+介紹)
+    display: flex;
+    border: 1px solid $lcb-slategray;
+  }
+  .blog-detail {
+    // 部落格-含搜尋框+每篇文章
+    padding: 80px 312px;
+    max-width: 100%;
+    border: 1px solid $lcb-slategray;
+  }
+  .blog-detail-main {
+    // 部落格詳情頁面-文章內容
+    padding: 80px 635px;
+    border: 1px solid $lcb-slategray;
+  }
+
   footer {
+    // 頁尾
     .topbox {
       display: flex;
       justify-content: space-between;
       padding: 80px 312px;
     }
     .copyright {
+      // 版權部分
       text-align: center;
       padding: 24px 0;
     }
@@ -75,23 +89,25 @@
   }
 }
 @media (max-width: 1440px) {
-  .container .blog-detail-main {
-    padding: 64px 12px;
-  }
-  .container .blog-detail {
-    padding: 80px 200px;
-  }
-  .container .blog-projects .presentation-about {
-    flex-direction: column;
-  }
-  .container .blog-contact {
-    padding: 80px 180px;
-  }
-  .container footer {
-    .topbox {
-      justify-content: center;
-      .icon {
-        display: none;
+  .container {
+    .blog-detail-main {
+      padding: 64px 12px;
+    }
+    .blog-detail {
+      padding: 80px 200px;
+    }
+    .blog-projects .presentation-about {
+      flex-direction: column;
+    }
+    .blog-contact {
+      padding: 80px 180px;
+    }
+    footer {
+      .topbox {
+        justify-content: center;
+        .icon {
+          display: none;
+        }
       }
     }
   }
