@@ -22,6 +22,7 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/all.css" />
     <title>leelu3333-最終練習-首頁</title>
   </head>
@@ -67,7 +68,12 @@
       <div class="blog-service">
         <h2 class="title-index">專業服務與方案</h2>
         <ul class="service-cards">
-          <li class="service-card-right">
+          <li
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="service-card-right"
+          >
             <img
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/photo.png?raw=true"
               alt="圖一"
@@ -80,7 +86,12 @@
               </p>
             </div>
           </li>
-          <li class="service-card-left">
+          <li
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="service-card-left"
+          >
             <div class="textbox textbox-left">
               <div class="icon"></div>
               <h3 class="title">線上諮詢</h3>
@@ -93,12 +104,21 @@
               alt="圖二"
             />
           </li>
-          <li class="service-card-right">
+          <li
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="service-card-right"
+          >
             <img
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/photo3.png?raw=true"
               alt="圖三"
             />
-            <div class="textbox textbox-right">
+            <div
+              class="textbox textbox-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div class="icon"></div>
               <h3 class="title">網頁開發</h3>
               <p class="text">
@@ -106,7 +126,12 @@
               </p>
             </div>
           </li>
-          <li class="service-card-left">
+          <li
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            class="service-card-left"
+          >
             <div class="textbox textbox-left">
               <div class="icon"></div>
               <h3 class="title">企業內訓</h3>
@@ -610,6 +635,7 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- 輪播JS -->
     <script>
       $('.autoplay').slick({
@@ -640,6 +666,8 @@
           },
         ],
       })
+
+      AOS.init()
     </script>
   </body>
 </html>
